@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/webdigitalark.style.css: {}
+  js:
+    assets/js/webdigitalark.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
