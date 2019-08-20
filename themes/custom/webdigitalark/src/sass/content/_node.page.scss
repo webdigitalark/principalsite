@@ -1,2 +1,183 @@
 // Page
 // -----------------------------------------------------------------------------
+.particles-js-canvas-el{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.navbar{
+	background-color: black !important;
+	.navbar-brand{
+		color: #5ABAE1;		
+    &:hover{
+      color:#FF0;
+    }
+    img{
+      width: 70px;
+    }
+	}
+	.navbar-nav{      
+    .nav-link{
+      color: #5ABAE1;
+      margin: 0 10px;
+      padding: 10px 20px;
+      position: relative;
+      &::before {
+        position:absolute;
+        top: 0;   
+        left:0;       
+        width: 100%;
+        height: 2px;
+        background: #5ABAE1;
+        content: '';
+        -webkit-transition: top 0.3s;
+        -moz-transition: top 0.3s;
+        transition: top 0.3s;
+      }
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background: #5ABAE1;
+        content: '';
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        transition: height 0.3s;
+      }
+      &:hover{
+        color: #FF0;
+        &::before {
+          top: 100%;
+          opacity: 1;
+        }
+        &::after{
+          height: 100%;
+        }
+      };
+      /*Cube*/
+      /*line-height: 44px;
+      -webkit-perspective: 1000px;
+      -moz-perspective: 1000px;
+      perspective: 1000px;
+      & span{
+        position: relative;
+        display: inline-block;
+        padding: 0 14px;
+        background: #5ABAE1;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        &:before{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #0965a0;
+          content: attr(data-hover);
+          -webkit-transition: background 0.3s;
+          -moz-transition: background 0.3s;
+          transition: background 0.3s;
+          -webkit-transform: rotateX(-90deg);
+          -moz-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+          -webkit-transform-origin: 50% 0;
+          -moz-transform-origin: 50% 0;
+          transform-origin: 50% 0;          
+        }
+        &:hover, &:focus{
+          text-align: center;
+          color: #ff0;
+          -webkit-transform: rotateX(90deg) translateY(-22px);
+          -moz-transform: rotateX(90deg) translateY(-22px);
+          transform: rotateX(90deg) translateY(-22px);          
+        }       
+      }*/
+      /*Efect door*/
+      /*line-height: 2em;
+      -webkit-perspective: 800px;
+      -moz-perspective: 800px;
+      perspective: 800px;      
+      & span{
+        position: relative;
+        display: inline-block;
+        padding: 3px 15px 0;
+        background: transparent;
+        box-shadow: inset 0 3px #2f4351;
+        -webkit-transition: background 0.6s;
+        -moz-transition: background 0.6s;
+        transition: background 0.6s;
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 0% 50%;
+        -moz-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          color: #2f4351;
+          content: attr(data-hover);
+          -webkit-transform: rotateX(270deg);
+          -moz-transform: rotateX(270deg);
+          transform: rotateX(270deg);
+          -webkit-transition: -webkit-transform 0.6s;
+          -moz-transition: -moz-transform 0.6s;
+          transition: transform 0.6s;
+          -webkit-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          transform-origin: 0 0;
+          pointer-events: none;
+          background: #2f4351;
+
+        }
+        &:hover, &:focus{
+          background: #2f4351;
+          &::before{
+            -webkit-transform: rotateX(10deg);  
+            -moz-transform: rotateX(10deg);
+            transform: rotateX(10deg);
+            background: #2f4351;
+            color: #FF0;
+            text-align: center;
+          };
+        };        
+      }*/  
+    }
+  }
+
+  .navbar-toggler{
+    background-color:#5ABAE1;
+  }
+  @media (max-width: 992px) {
+    .navbar-collapse{
+      text-align: center;
+      &.show{
+        height: 100vh;  
+      }
+    }
+    .search-block-form{
+      display: inline-block;
+      padding: 10px 0 10px 0;
+    }
+  }
+}
+

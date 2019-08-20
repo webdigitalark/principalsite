@@ -5,6 +5,9 @@ style:
       assets/css/webdigitalark.style.css: {}
   js:
     assets/js/webdigitalark.script.js: {}
+    assets/js/modernizr.custom.js: {}
+    assets/js/particles.min.js: {}
+    assets/js/app.js: {}
   dependencies:
     - core/jquery
     - core/drupal
